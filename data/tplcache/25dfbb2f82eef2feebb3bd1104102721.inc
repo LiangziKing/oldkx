@@ -1,0 +1,2 @@
+<div title="[field:fulltitle/]" alt="[field:fulltitle/]" onclick="window.open('[field:arcurl/]')" class="bgitem" id="flashbg[field:global name=autoindex runphp='yes']@me=@me-1;[/field:global]" style="background: url('[field:litpic/]') no-repeat scroll center top;
+            height: 585px;cursor:pointer; width: 100%; margin:0 auto;;"></div>

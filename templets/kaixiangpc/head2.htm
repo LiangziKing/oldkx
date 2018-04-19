@@ -1,0 +1,70 @@
+	<script language="javascript">
+	<!--
+		window.onerror = function () { return true; }
+	// -->
+	</script> 
+	
+	<div class="top">
+        <div class="header">
+            <div class="h_top clearfix">
+				<span>您好,欢迎来到郑州开祥清洁服务有限公司官方网站!</span>
+				<p>
+				
+					
+					{dede:channel type='self' row="2" typeid="71,59" }
+					<a href="[field:typeurl/]"
+						title="[field:typename/]">[field:typename/]</a>|  
+					{/dede:channel}	
+					<a href="http://www.zzkxqj.com/sitemap.html"
+                            title="网站地图">网站地图</a>
+				</p>
+			</div>
+			<div class="h_con clearfix">
+				<div class="h-logo clearfix">
+					<h1>
+						<a href="{dede:global.cfg_indexurl/}" title="{dede:global.cfg_indexname/}">
+							<img src="{dede:global.cfg_basehost/}{dede:global.cfg_medias_dir/}/Others/20140217132103_34336.png" alt="{dede:global.cfg_indexname/}" title="{dede:global.cfg_webname/}" /></a></h1>
+					<em><br />
+						<p> 全力打造郑州保洁服务拇指品牌	</p>
+					</em>
+				</div>
+				<div class="h-pho clearfix">
+					<span>全国免费咨询热线<b>0371-66398288</b></span>
+				</div>
+				
+			</div>
+			<div class="h_nav">
+				<ul class="clearfix">
+			<li><a href='{dede:global.cfg_cmsurl/}/' title="{dede:global.cfg_indexname/}">{dede:global.cfg_indexname/}</a></li>
+	{dede:channel type='son' row='8' typeid="1" currentstyle="<li><a href="~typelink~" title="[field:typename/]">~typename~</a></li>"}	
+		<li><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></li>
+    {/dede:channel}		
+				</ul>
+			</div>
+        </div>
+    </div>
+	<!--大家还感兴趣-->	
+	<div class="h-ser clearfix">
+	    <div class="ser-con">
+			<p><b>大家还感兴趣的 >>> </b> 
+				<span id="commonHeaderkeywords">
+					{dede:tag row='6' getall='1' sort='rand'}
+					<a href='/tags.php?/[field:tag /]' target="_parent" title="[field:tag /]">[field:tag /]</a>
+					{/dede:tag}	
+				</span>
+			</p>
+			<div class="s-inp fr">
+				<input type="text" class="inp01" onblur="if(this.value==''){this.value='请输入关键词'}"
+							value="请输入关键词" id="seachkeywords" onclick="this.value=''" /><input onclick="SearchObjectByGet('seachkeywords,q','/plus/search.php?searchtype=titlekeyword',false)"
+								type="image" src="{dede:global.cfg_basehost/}/assets/img/common/s_ss.gif" />
+			</div>
+		</div>
+	
+
+	</div>
+	<script type="text/javascript">
+		//$(document).bind("contextmenu", function () { return false; })
+		initCommonHeader(); muneCur2();
+		if (MARK == "" || MARK == null) var MARK = "index";
+		initCommonHeaderKeywords(MARK);  
+	</script>	

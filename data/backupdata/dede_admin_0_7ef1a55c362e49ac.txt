@@ -1,0 +1,2 @@
+INSERT INTO `dede_admin` VALUES('1','10','admin','bcbb4314be192853f6b4','admin','','','0','1524129075','127.0.0.1');
+INSERT INTO `dede_admin` VALUES('2','10','king','bcbb4314be192853f6b4','开祥清洁','','','','0','');

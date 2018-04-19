@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="{dede:global.cfg_soft_lang/}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{dede:field.title/}{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field.keywords/}" />
+	<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+	<link href="{dede:global.cfg_basehost/}/assets/css/resetcommon.css" rel="stylesheet" type="text/css" />
+	<link href="{dede:global.cfg_basehost/}/assets/css/Style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/DetailsPro.js"></script>
+    <script language="javascript">	
+        window.onerror = function () { return true; }
+    </script>
+</head>
+<body>
+	<!--Header:Start-->
+	{dede:include filename="head2.htm"/}
+    <!--Header:End-->
+    <!--Content:Start-->
+	<div class="content">
+		<div class="topadcs">
+			<a  target='_blank' href='/project/' title='河南保洁哪家好？河南最好的保洁公司'><img src='/uploads/allimg/150105/1-150105103Q4529.png' alt='河南保洁哪家好？河南最好的保洁公司' title='河南保洁哪家好？河南最好的保洁公司' /></a>
+		</div>
+		<div class="right_prj">
+			<div class="righttop">
+			</div>
+			<div class="plc">
+				<span>当前位置:</span>{dede:field name='position'/}
+			</div>
+			<div class="rightbot">
+			</div>
+			<div class="righttop">
+			</div>
+			<div class="pro_main">
+				<div class="n_info_con" id="printableview">
+					<h1>{dede:field.title/}</h1>
+					<div class="info_con_tit">
+						<div class="n_tit">
+							<span>文章出处：{dede:field.source/}</span><span>作者：{dede:field.writer/}</span>
+							<span>人气：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script><span id="cntrHits"></span></span>
+							<span>发表时间：{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}</span><span class="tit2_span">
+										字体大小:【 <a onclick="$j('cntrBody div').css('font-size','16px');$(this).parent().children().removeClass('cur');$(this).addClass('cur');" href="javascript:void(0)">
+											大</a> <a class="cur" onclick="$j('cntrBody div').css('font-size','14px');$(this).parent().children().removeClass('cur');$(this).addClass('cur');" href="javascript:void(0)">
+												中</a> <a onclick="$j('cntrBody div').css('font-size','12px');$(this).parent().children().removeClass('cur');$(this).addClass('cur');" href="javascript:void(0)">
+													小</a> 】 </span>
+						</div>
+					</div>
+					<div class="fenlei">
+						<div class="tits">
+							<a  class="cur"><span>详细信息</span></a>
+							<div class="clear">
+							</div>
+						</div>
+					</div>
+					<div class="proinfo " id="detailvalue0">
+						<div class="nr_list">
+							<ul></ul>
+							<div class="clear"></div>
+						</div> 
+						
+						{dede:field name='imgurls' alt='图片输出区' row='2'}
+						<p style="text-align: center">
+							<img title="[field:alttext /]" alt="[field:alttext /]" width="600" height="450" src="[field:imgsrc/]" /></p>
+						
+						{/dede:field}
+						<p style="text-align: center"> </p>
+						{dede:mytag name='zzkxqj' ismake='yes'/} 
+					</div>
+					
+					<div class="pro_key">
+						<span>此文关键字：</span>
+					{dede:tag type='current'}
+						<a href="[field:link/]" title="[field:tag /]"  target="_blank">[field:tag /]</a>
+						
+					{/dede:tag}
+					</div>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+			<div class="rightbot">
+			</div>			 
+		</div>
+		<div class="left_prj">
+			<div class="leib2">{dede:type typeid="75"}
+				<div class="tit">
+					<a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></div>
+				{/dede:type}
+				<div class="nr">
+				{dede:channel type="son" typeid='75'}				
+				   <h4 sid="0001,000[field:global name=autoindex runphp=\"yes\"]@me=@me+2;[/field:global]"><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></h4>				   
+				
+				{/dede:channel}
+				</div>
+			</div>
+			<div class="leftbot">
+			</div>
+			<div id="divHistoryRecommentCntr" class="leib2 mt10">
+			</div>
+			<div class="leib3 mt10">
+				{dede:mytag name='Contact' ismake='yes'/} 
+			</div>
+			<div class="leftbot">
+			</div>
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+	<!--content:end-->
+	<!--footer:start-->
+	{dede:include filename="footer.htm"/}
+	<!--footer:end-->
+</body>
+</html>

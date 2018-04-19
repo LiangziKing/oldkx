@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+	<title>{dede:field.title function='ereg_replace(" » ","_",@me)'/}_{dede:global.cfg_webname/}</title>
+	<meta name="keywords" content="{dede:field name='keywords'/}"/>
+	<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+	<script type="text/javascript">SKIN_PATH="/Templets/Kx1/";</script>
+	<link href="{dede:global.cfg_basehost/}/assets/css/resetcommon.css" rel="stylesheet" type="text/css" />
+	<link href="{dede:global.cfg_basehost/}/assets/css/Style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/ss.js"></script>
+</head>
+<body >
+    <!--Header:Start-->		
+	{dede:include filename="head2.htm"/}	
+    <!--Header:End-->
+    <!--Content:Start-->
+    <div class="content">
+        <div class="topadcs">
+            <a  target='_blank' href='/Service/' title='服务让生活更美好！'><img src='/uploads/allimg/150105/1-150105103U9649.png' alt='服务让生活更美好！' title='服务让生活更美好！' /></a>
+        </div>
+        <div class="rightl">
+            <div class="righttop">
+            </div>            
+			<div class="plc">
+				<span><span class="dang">当前位置：</span>{dede:field name='position'/} </span>	
+			</div>
+            <div class="rightbot">
+            </div>
+            <div class="righttop">
+            </div>
+            <div class="pro_main">
+                {dede:list pagesize='9' flag='c' noflag='h,a' type='image.'}
+						
+                    <dl class="pd_list_dl">
+                        <dt><a target="_blank" href="[field:arcurl/]" title="[field:fulltitle/]">
+                            <img src="[field:litpic/]" alt="[field:fulltitle/]" title="[field:fulltitle/]" /></a></dt>
+                            <dd>
+                                <a target="_blank" href="[field:arcurl/]" title="[field:fulltitle/]">
+                                    [field:title/]</a></dd>
+                    </dl>
+						
+				{/dede:list}
+                <div class="clear">
+                </div>
+				<div id="pagerMain" class="apage">
+					{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+				</div>
+            </div>
+            <div class="rightbot">
+            </div>
+            <div class="mt10">
+                <h4 class="diysr">
+                    推荐资讯</h4>
+                <div class="news_random">
+                    <ul>
+                    {dede:arclist flag='' typeid='69' row='20' col='2' titlelen='60' orderby='rand'}
+						<li>
+							<span class="fr">
+                                [field:pubdate function="GetDateMK(@me)"/] </span><a target="_blank"
+                                        href="[field:arcurl /]" title="[field:fulltitle /]">
+                                        [field:title/]</a>
+						</li>
+
+					{/dede:arclist}						
+						<div class="clear"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightbot">
+            </div>
+        </div>
+        <div class="leftr">
+			<div class="leib1">
+				<div class="tit">
+					<a title="开祥清洁/保洁服务中心" href="/Service/">开祥清洁/保洁服务中心</a></div>
+				<div id="nr">				   
+				   <ul class="myShow">
+					   {dede:channel name='type' runphp='yes' if(reid == "0") @me = "son";else @me = "self";}
+					   <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>			
+					   {/dede:channel}		   
+				   </ul>
+				   <div class='clear'></div>						  
+				</div>
+			</div>
+			<div class="leftbot"></div>            
+			<div class="leib2 mt10" id="lefttuijian">
+				<div class="tit">
+					最新案例</div>
+				<div class="nrs">					
+					{dede:arclist row='3' typeid='64' orderby='pubdate'}
+						<dl class="pd_t05_con_dl">
+							<dt><a href="[field:arcurl/]" target="_blank"
+								title="[field:fulltitle/]">
+								<img src="[field:litpic/]" alt="[field:title function='htmlspecialchars(@me)'/]"
+									title="[field:fulltitle/]" /></a></dt>
+								<dd>
+									<a href="[field:arcurl/]" title="[field:title/]"
+										target="_blank">
+										[field:title/]</a></dd>
+						</dl>
+							
+					{/dede:arclist}				
+						
+					<div class="clear">
+					</div>
+				</div>
+				<div class="leftbot">
+				</div>
+			</div>
+
+			<div class="leib3 mt10">
+			{dede:mytag name='Contact' ismake='yes'/} 
+			</div>
+			<div class="leftbot"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--Content:End-->
+	<!--Footer:Start-->
+	{dede:include filename="footer.htm"/}
+    <!--Footer:End-->
+</body>
+</html>

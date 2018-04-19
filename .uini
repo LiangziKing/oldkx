@@ -1,0 +1,1 @@
+open_basedir="F:\UPK2164\vhosts\old.zzkxqj.com\;F:\UPK2164\memcached\;F:\UPK2164\phpmyadmin\;F:\UPK2164\temp\;C:\Windows\Temp\"

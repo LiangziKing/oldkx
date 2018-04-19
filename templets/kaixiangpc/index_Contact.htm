@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="{dede:global.cfg_soft_lang/}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{dede:field.title function='ereg_replace(" » ","_",@me)'/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}"/>
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="{dede:global.cfg_basehost/}/assets/css/resetcommon.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_basehost/}/assets/css/Style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/DetailsPro.js"></script>
+    <script language="javascript">
+<!--
+        window.onerror = function () { return true; }
+// -->
+    </script>
+
+
+</head>
+<body>
+    {dede:include filename="head2.htm"/}
+<!--content:start-->
+<div class="content">
+    <div class="topadcs">
+        <a href="/Service/" title="我们的服务让您生活的更美好"><img src="/uploads/allimg/150105/1-15010515135N34.png" title="我们的服务让您生活的更美好" alt="我们的服务让您生活的更美好" /></a>
+    </div>
+    <div class="right">
+        <div class="righttop">
+        </div>
+        <div class="plc">
+             <span><span class="dang">当前位置：</span>{dede:field name='position'/} </span>
+        </div>
+        <div class="rightbot">
+        </div>
+        <div class="righttop">
+        </div>
+		
+		<div class="right_main">
+			<div class="agent_con">
+				<div class="age_li_about">
+		{dede:field.content/}
+				</div>
+				<div class="age_con_key">
+					<div class="rt_bot_line"></div>
+					<div class="age_con_key2">
+						 访问量：<span id="cntrHits"><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></span></div>
+					<div class="age_con_key1">
+						<span>此文关键词：</span>{dede:field.keywords/} </div>
+				</div>
+			</div>
+		</div>
+		<br />
+		
+       
+        <div class="rightbot">
+        </div>
+    </div>
+    <div class="left">
+       {dede:mytag name='Contact' ismake='yes'/} 
+<div class="leftbot">
+    </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+<!--content:end-->
+<!--footer:start-->    
+{dede:include filename="footer.htm"/}
+<!--footer:end-->﻿
+</body> </html>
+
+
+
+<span style="display: none">
+   
+</span>
+
+<script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/im.js"></script>

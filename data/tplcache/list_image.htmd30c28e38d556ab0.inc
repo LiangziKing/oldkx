@@ -1,0 +1,40 @@
+<?php
+$z[0]=Array("global","",107,135);
+$z[0][4]['name']="cfg_soft_lang";
+$z[1]=Array("field","",149,208);
+$z[1][4]['name']="title";
+$z[1][4]['function']="ereg_replace(\" » \",\"_\",@me)";
+$z[2]=Array("global","",209,235);
+$z[2][4]['name']="cfg_webname";
+$z[3]=Array("field","",277,306);
+$z[3][4]['name']="keywords";
+$z[4]=Array("field","",347,405);
+$z[4][4]['name']="description";
+$z[4][4]['function']="html2text(@me)";
+$z[5]=Array("global","",573,600);
+$z[5][4]['name']="cfg_basehost";
+$z[6]=Array("global","",679,706);
+$z[6][4]['name']="cfg_basehost";
+$z[7]=Array("global","",803,830);
+$z[7][4]['name']="cfg_basehost";
+$z[8]=Array("include","",913,949);
+$z[8][4]['filename']="head2.htm";
+$z[9]=Array("field","",1480,1509);
+$z[9][4]['name']="position";
+$z[10]=Array("list","\r\n					<dl class=\"pj_list_dl\">\r\n						<dt><a target=\"_blank\" href=\"[field:arcurl/]\">\r\n                                <img src=\"[field:litpic/]\" alt=\"[field:fulltitle/]\"\r\n                                    title=\"[field:fulltitle/]\" /></a>\r\n						</dt>\r\n                        <dd>\r\n                            <a href=\"[field:arcurl/]\" target=\"_blank\"\r\n                                    title=\"[field:fulltitle/]\">\r\n                                    [field:fulltitle/]</a>\r\n						</dd>\r\n					</dl>			\r\n				",1708,2258);
+$z[10][4]['pagesize']="12";
+$z[11]=Array("pagelist","",2372,2443);
+$z[11][4]['listitem']="info,index,end,pre,next,pageno";
+$z[11][4]['listsize']="5";
+$z[12]=Array("type","\r\n				<div class=\"tit\">\r\n					<a href=\"[field:typeurl/]\" title=\"[field:typename/]\">[field:typename/]</a></div>\r\n				",2614,2765);
+$z[12][4]['typeid']="75";
+$z[13]=Array("channel","				\r\n				   <h4 sid=\"0001,000[field:global name=autoindex runphp=\\\"yes\\\"]@me=@me+2;[/field:global]\"><a href=\"[field:typeurl/]\" title=\"[field:typename/]\">[field:typename/]</a></h4>				   \r\n				\r\n				",2793,3044);
+$z[13][4]['type']="son";
+$z[13][4]['typeid']="75";
+$z[14]=Array("mytag","",3228,3269);
+$z[14][4]['name']="Contact";
+$z[14][4]['ismake']="yes";
+$z[15]=Array("include","",3443,3480);
+$z[15][4]['filename']="footer.htm";
+
+?>

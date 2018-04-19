@@ -1,0 +1,1 @@
+<h4 class="news_item" sid="0001,0020"><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></h4>

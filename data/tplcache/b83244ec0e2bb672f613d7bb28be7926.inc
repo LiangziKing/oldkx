@@ -1,0 +1,1 @@
+<td><a href="[field:arcurl /]"><img width="200" height="130" src="[field:litpic/]" alt="[field:fulltitle/]" /></a></td>

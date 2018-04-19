@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="{dede:global.cfg_soft_lang/}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{dede:field.title/}|{dede:global.cfg_webname/}</title>
+	<meta name="keywords" content="{dede:field name='keywords'/}"/>
+	<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="{dede:global.cfg_basehost/}/assets/css/resetcommon.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_basehost/}/assets/css/Style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/DetailsPro.js"></script>
+    <script language="javascript">
+<!--
+        window.onerror = function () { return true; }
+// -->
+    </script>
+
+
+</head>
+<body>
+    {dede:include filename="head2.htm"/}
+<!--content:start-->
+<div class="content">
+    <div class="topadcs">
+        <a href="/Service/" title="开祥官方微信公众账号"><img src="/uploads/allimg/141225/1-141225131441331.jpg" title="开祥官方微信公众账号" alt="开祥官方微信公众账号" /></a>
+    </div>
+    <div class="right">
+        <div class="righttop">
+        </div>
+        <div class="plc">
+             <span><span class="dang">当前位置：</span>{dede:field name='position'/} </span>
+        </div>
+        <div class="rightbot">
+        </div>
+        <div class="righttop">
+        </div>
+		
+		<div class="right_main">
+			<div class="agent_con">
+				<div class="age_li_about">
+		{dede:field.content/}
+				</div>
+				<div class="age_con_key">
+					<div class="rt_bot_line"></div>
+					<div class="age_con_key2">
+						 访问量：<span id="cntrHits">{dede:field.click/}</span></div>
+					<div class="age_con_key1">
+						<span>此文关键词：</span>{dede:field.keywords/} </div>
+				</div>
+			</div>
+		</div>
+		<br />
+		
+       
+        <div class="rightbot">
+        </div>
+    </div>
+    <div class="left">
+
+        {dede:mytag name='Contact' ismake='yes'/} 
+<div class="leftbot">
+    </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+<!--content:end-->
+<!--footer:start-->    
+{dede:include filename="footer.htm"/}
+<!--footer:end-->﻿
+</body> </html>

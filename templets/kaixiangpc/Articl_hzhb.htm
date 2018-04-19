@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="{dede:global.cfg_soft_lang/}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field.keywords/}" />
+	<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+    <link href="{dede:global.cfg_basehost/}/assets/css/resetcommon.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_basehost/}/assets/css/Style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/DetailsPro.js"></script>
+    <script language="javascript">
+<!--
+        window.onerror = function () { return true; }
+// -->
+    </script>
+
+</head>
+<body>
+	<!--头部开始-->
+{dede:include filename="head2.htm"/}
+	<!--大家还感兴趣-->
+
+    <script type="text/javascript">
+        $(document).bind("contextmenu", function () { return false; })
+        initCommonHeader();
+        muneCur2();
+    </script>
+
+<script type="text/javascript">
+    var OBJ_TITLE = "兴业银行";
+    var OBJ_ID = "63";
+    var MARK = "news";
+    var ARR_AD_MARK = ["news_detail_1", "news_detail_2", "news_detail_3"];
+    var SID = "0001,0019,0021";
+    //权限ID
+    var AUTHORITY_ID = "";
+</script>
+<script src="{dede:global.cfg_basehost/}/assets/js/Cls_jsPage.js"></script>
+<!--content:start-->
+<div class="content">
+    <div class="topadcs">
+        <a  target='_blank' href='/cgal.shtml' title='诗敏感谢一路有您'><img src='/Uploads/Others/20140927175045_26265.jpg' alt='诗敏感谢一路有您' title='诗敏感谢一路有您' /></a>
+    </div>
+    <div class="plc2">
+        当前位置：{dede:field name='position'/}
+	</div>
+    <div class="left2">
+        <div class="left2top">
+        </div>
+        <div class="left2_main">
+            <div class="n_info_con" id="printableview">
+                <h1>{dede:field.title/}</h1>
+                <div class="info_con_tit">
+                    <div class="info_con_tit">
+                        <div class="n_tit">
+                            <span>文章出处：{dede:field.source/}</span><span>责任编辑：{dede:adminname/}</span><span>作者：{dede:field.writer/}</span>
+							<span>人气：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script><span id="cntrHits"></span></span>
+							<span>发表时间：{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}</span><span class="tit2_span">
+                                    字体大小:【 <a onclick="$j('cntrBody p').css('font-size','16px');$(this).parent().children().removeClass('cur');$(this).addClass('cur');" href="javascript:void(0)">
+                                        大</a> <a class="cur" onclick="$j('cntrBody p').css('font-size','14px');$(this).parent().children().removeClass('cur');$(this).addClass('cur');" href="javascript:void(0)">
+                                            中</a> <a onclick="$j('cntrBody p').css('font-size','12px');$(this).parent().children().removeClass('cur');$(this).addClass('cur');" href="javascript:void(0)">
+                                                小</a> 】 </span>
+                        </div>
+                    </div>
+                </div> <div class="clear"></div>
+                <div id="cntrBody">
+	{dede:field.body/}
+	{dede:field.vote/}	
+                </div>
+                <div class="apage" id="showfenye">
+                    <!--资讯分页:start-->
+                    <script type="text/javascript">
+                    var pagecont=1;
+                    if(pagecont >= 2)
+                    {
+                    var ss = new Cls_jsPage(1, 1, 5, "ss");
+                    ss.setPageSE("xyyx_", ".html");
+                    ss.setPageInput("Page");
+                    ss.setUrl("");
+                    ss.setPageFrist("<a disabled='true'class='ob'>首页</a>", "首页");
+                    ss.setPagePrev("<a disabled='true'class='ob'>上一页</a>", "上一页");
+                    ss.setPageNext("<a disabled='true'class='ob'>下一页</a>", "下一页");
+                    ss.setPageLast("<a disabled='true'class='ob'>尾页</a>", "尾页");
+                    ss.setPageText("{$PageNum}", "{$PageNum}");
+                    ss.setPageTextF("{$PageTextF}", "{$PageTextF}");
+                    ss.setPageSelect("{$PageNum}", "{$PageNum}");
+                    ss.setPageCss("o", "", "");
+                    ss.setHtml("<div class='o'>{$PageFrist}{$PagePrev}{$PageText}{$PageNext}{$PageLast}</div>");
+                    ss.Write();
+                    }
+                    else
+                    {
+                        document.getElementById("showfenye").style.display="none";
+                    }
+                    </script>
+                    <!--资讯分页:end-->
+                </div>
+                <div class="gduo">
+                    <span>{dede:prenext get='next'/}</span>{dede:prenext get='pre'/}
+				</div>
+            </div>
+            <div class="info_key">
+                <span>此文关键字：</span><a target='_blank' href="/Search/Index.aspx?kwd=%e4%b8%8a%e6%b5%b7%e5%8a%9e%e5%85%ac%e5%ae%b6%e5%85%b7%e5%93%81%e7%89%8c">上海办公家具品牌</a> <a target='_blank' href="/Search/Index.aspx?kwd=%e5%8a%9e%e5%85%ac%e5%ae%b6%e5%85%b7%e5%93%81%e7%89%8c">办公家具品牌</a> <a target='_blank' href="/Search/Index.aspx?kwd=%e8%af%97%e6%95%8f%e5%ae%98%e7%bd%91">诗敏官网</a> 
+            </div>
+            <div class="n_info_con2">
+                <h4 class="t04">相关资讯</h4>
+                <div class="info_b">
+                    <ul class="p_list_ul">
+                        <li><a target='_blank' href='http://www.zzkxqj.com/Article/wdjt_1.html' title='万达集团'>万达集团</a></li><li><a target='_blank' href='http://www.zzkxqj.com/Article/gsyx_1.html' title='工商银行'>工商银行</a></li><li><a target='_blank' href='http://www.zzkxqj.com/Article/jdsc_1.html' title='京东商城'>京东商城</a></li><li><a target='_blank' href='http://www.zzkxqj.com/Article/hpgs_1.html' title='惠普公司'>惠普公司</a></li><li><a target='_blank' href='http://www.zzkxqj.com/Article/zgsh_1.html' title='中国石化'>中国石化</a></li><li><a target='_blank' href='http://www.zzkxqj.com/Article/zgsy_1.html' title='中国石油'>中国石油</a></li><li><a target='_blank' href='http://www.zzkxqj.com/Article/zky_1.html' title='中科院'>中科院</a></li>
+                    </ul>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="n_info_tjcp">
+                <h4 class="t04">推荐产品</h4>
+                <dl><dt><a title='实木办公桌-BT28' target="_blank" href='http://www.zzkxqj.com/Products/smbgzbt28.html'><img title='实木办公桌-BT28' alt='实木办公桌-BT28' src='http://www.zzkxqj.com/UploadFiles/Product/20140311144047_90875.jpg'></a></dt><dd><a title='实木办公桌-BT28' target="_blank" href='http://www.zzkxqj.com/Products/smbgzbt28.html'>实木办公桌-BT28</a></dd></dl><dl><dt><a title='人体工学椅-BGY10' target="_blank" href='http://www.zzkxqj.com/Products/rtgxybgy10.html'><img title='人体工学椅-BGY10' alt='人体工学椅-BGY10' src='http://www.zzkxqj.com/UploadFiles/Product/20140322152636_29605.jpg'></a></dt><dd><a title='人体工学椅-BGY10' target="_blank" href='http://www.zzkxqj.com/Products/rtgxybgy10.html'>人体工学椅-BGY10</a></dd></dl><dl><dt><a title='职员椅-BGY15' target="_blank" href='http://www.zzkxqj.com/Products/zyybgy15.html'><img title='职员椅-BGY15' alt='职员椅-BGY15' src='http://www.zzkxqj.com/UploadFiles/Product/20140614124706_11319.jpg'></a></dt><dd><a title='职员椅-BGY15' target="_blank" href='http://www.zzkxqj.com/Products/zyybgy15.html'>职员椅-BGY15</a></dd></dl>
+            </div>
+        </div>
+        <div class="left2bot">
+        </div>
+    </div>
+    <div class="right2">
+        <div class="right2top">
+        </div>
+        <div class="right2_main">
+           <h4>
+              <img alt="排行榜" src="{dede:global.cfg_basehost/}/assets/img/index/paihang.gif"></h4>
+            <div id="newpro">
+            </div>
+            <h4 class="t03">
+                <a href="http://www.zzkxqj.com/hzhb.shtml" title="同类文章排行">同类文章排行</a></h4>
+            <ul class="n_rt_ul">
+				{dede:arclist row=9 orderby='click'}
+				<li><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></li>
+				{/dede:arclist}                
+            </ul>
+            <h4 class="t03">
+                <a href="http://www.zzkxqj.com/news/" title="最新资讯文章">最新资讯文章</a></h4>
+            <ul class="n_rt_ul" id="cntrLastArticle">
+			{dede:arclist row=10 orderby='pubdate'}
+				<li><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></li>
+			{/dede:arclist}  
+            </ul>
+            <h4 class="t03">
+                您的浏览历史</h4>
+            <ul class="n_rt_ul" id="divHistoryCntr">
+                <img src="{dede:global.cfg_basehost/}/assets/img/index/processing_3.gif" alt="正在加载..." />
+            </ul>
+        </div>
+        <div class="right2bot">
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+<!--content:end-->
+	{dede:include filename="footer.htm"/}
+</body> 
+</html>
+<script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/im.js"></script>
+<script type="text/javascript">    newsLoad(); checkAuthority(AUTHORITY_ID, OBJ_TITLE); initCommonHeaderKeywords(MARK);</script>
+
+

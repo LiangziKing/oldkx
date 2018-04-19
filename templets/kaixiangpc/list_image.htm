@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+	<title>{dede:field.title function='ereg_replace(" » ","_",@me)'/}_{dede:global.cfg_webname/}</title>
+	<meta name="keywords" content="{dede:field name='keywords'/}" />
+	<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+	<script language="javascript">
+        var MARK = "Project";
+    </script>
+	<script type="text/javascript">SKIN_PATH="/Templets/kx1/";</script>
+	<link href="{dede:global.cfg_basehost/}/assets/css/resetcommon.css" rel="stylesheet" type="text/css" />
+	<link href="{dede:global.cfg_basehost/}/assets/css/Style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/jcia.js"></script>
+</head>
+</head>
+<body>
+    <!--Header:Start-->
+	{dede:include filename="head2.htm"/}
+    <!--Header:End-->
+    <!--Content:Start-->
+    <div class="content">
+        <div class="topadcs">
+            <a  target=_blank href='/project/' title='我们致力于您的美好生活'><img src='/uploads/allimg/150105/1-150105103U9649.png' alt='我们致力于您的美好生活' title='我们致力于您的美好生活' /></a>
+        </div>
+        <div class="rightl">
+            <div class="righttop">
+            </div>             
+			<div class="plc">
+				<span><span class="dang">当前位置：</span>{dede:field name='position'/}</span>	
+			</div>            
+            <div class="rightbot">
+            </div>
+            <div class="righttop">
+            </div>
+            <div class="right_main">
+                {dede:list pagesize='12'}
+					<dl class="pj_list_dl">
+						<dt><a target="_blank" href="[field:arcurl/]">
+                                <img src="[field:litpic/]" alt="[field:fulltitle/]"
+                                    title="[field:fulltitle/]" /></a>
+						</dt>
+                        <dd>
+                            <a href="[field:arcurl/]" target="_blank"
+                                    title="[field:fulltitle/]">
+                                    [field:fulltitle/]</a>
+						</dd>
+					</dl>			
+				{/dede:list}
+				
+                <div class="clear">
+                </div>
+				<div id="pagerMain" class="apage">
+					{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+				</div>
+            </div>
+            <div class="rightbot">
+            </div>
+        </div>
+        <div class="leftr">
+            
+			<div class="leib2">{dede:type typeid="75"}
+				<div class="tit">
+					<a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></div>
+				{/dede:type}
+				<div class="nr">
+				{dede:channel type="son" typeid='75'}				
+				   <h4 sid="0001,000[field:global name=autoindex runphp=\"yes\"]@me=@me+2;[/field:global]"><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></h4>				   
+				
+				{/dede:channel}
+				</div>
+			</div>
+			<div class="leftbot">
+			</div>
+			<script type="text/javascript">
+				projectSelectCurrentPosition("");
+			</script>
+			<div class="leib3 mt10">
+				{dede:mytag name='Contact' ismake='yes'/} 
+			</div>
+			<div class="leftbot">
+			</div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <!--Content:End-->
+    <!--Footer:Start-->
+	{dede:include filename="footer.htm"/}
+    <!--Footer:End-->
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="{dede:global.cfg_soft_lang/}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{dede:field.title function='ereg_replace(" » ","_",@me)'/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field.keywords/}" />
+    <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+    <script type="text/javascript">SKIN_PATH="/Templets/kx1/";</script>
+    <link href="{dede:global.cfg_basehost/}/assets/css/resetcommon.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_basehost/}/assets/css/Style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/jcia.js"></script>
+</head>
+<body>
+    <!--Header:Start-->	
+	{dede:include filename="head2.htm"/}
+    <!--Header:End-->
+    <!--Content:Start-->
+    <div class="content">
+        <div class="topadcs">
+            <img src="/uploads/allimg/141225/1-141225131441331.jpg" title="开祥官方微信公众账号" alt="开祥官方微信公众账号" />
+        </div>
+        
+<div class="leftr">
+    <div class="leib" id="cgal" style="display: none;">{dede:type}
+        <div class="tit">
+            <a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></div>{/dede:type}
+        <div class="nr">{dede:type typeid="64"}
+			<h4  sid="0001,0019,00[field:ID /]"><a href="[field:typeurl/]" title="近6个月成功案例">近6个月成功案例</a></h4>{/dede:type}
+			<ul>
+			{dede:channel type="son"}
+				<li sid="0001,0019,00[field:ID /],002[field:global name=autoindex runphp=\"yes\"]@me=@me+1;[/field:global]"><a href='[field:typeurl/]' title="[field:typename/]">[field:typename/]</a></li>
+				
+			{/dede:channel} 
+			</ul>
+		</div>
+        <div class="leftbot">
+        </div>
+    </div>
+    <div class="leib">{dede:type typeid="57"}
+        <div class="tit">
+            <a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></div>{/dede:type}	
+        <div class="nr">{dede:type typeid="62"}
+			<h4  sid="0001,0019,00[field:ID /]"><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></h4>{/dede:type}	
+			<ul>
+			{dede:channel type="son" typeid='62'}
+				<li sid="0001,0019,00[field:ID /]"><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></li>
+				
+			{/dede:channel} 
+			</ul>
+		</div>
+        <div class="leftbot"></div>
+    </div>
+    <div class="leib3 mt10">
+	{dede:mytag name='Contact' ismake='yes'/} 
+
+	</div>
+	<div class="leftbot"> </div>
+</div>
+    <div class="rightl">
+        <div class="righttop"></div>            
+		<div class="plc">
+			<span><span class="dang">当前位置：</span>{dede:field name='position'/}</span>			
+		</div>
+        <div class="rightbot"></div>
+        <div class="righttop"></div>
+        <div class="right_main">
+            <div class="news_con"> 
+            {dede:list pagesize='12' type='image.'}        
+                            <dl class="dl_2">
+                                <dt><a title="[field:fulltitle/]" href="[field:arcurl/]" target="_blank">
+                                    <img src="[field:litpic/]"
+                                      title="[field:fulltitle/]" alt="[field:fulltitle/]" /></a></dt>
+                                <dd>
+                                    <a title="[field:fulltitle/]" href="[field:arcurl/]" target="_blank">
+                                        [field:fulltitle/]</a></dd>
+                            </dl>
+                        
+                           
+                    
+                    {/dede:list}
+                    
+                    <div class="clear">
+                    </div>
+                 
+					<div id="pagerMain" class="apage">
+					{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+					</div>
+				
+			
+            </div>
+        </div>
+            <div class="rightbot">
+            </div>
+            <div class="RandomNews" id="righttuijian">
+                <h4 class="diysr">
+                    推荐服务</h4>
+                <div class="news_random">
+                    {dede:arclist row='6' typeid='all' titlelen='40' flag='c' orderby='rand'}
+                            <dl class="pd_list_dl">
+                                <dt><a href="[field:arcurl /]" target="_blank"
+                                    title="[field:fulltitle/]">
+                                    <img src="[field:litpic/]" alt="[field:fulltitle/]" title="[field:fulltitle/]" /></a></dt>
+                                <dd>
+                                    <a href="[field:arcurl /]" title="[field:fulltitle/]"
+                                        target="_blank">
+                                        [field:fulltitle/]</a></dd>
+                            </dl>
+							
+                    {/dede:arclist}                       
+                        
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div class="rightbot">
+            </div>
+        </div>
+        <script type="text/javascript">
+            var SID = "0001,0019,00{dede:type}[field:ID /]{/dede:type}";
+            newsSelectCurrentPosition();
+        </script>
+        <div class="clear">
+        </div>
+    </div>
+    <!--Content:End-->
+    <!--Footer:Start-->
+	
+	{dede:include filename="footer.htm"/}
+	
+    <!--Footer:End-->
+</body>
+</html>
+<script type="text/javascript">
+    $(".news_con").find("dl").hover(function () { $(this).addClass("news_dl_hover"); }, function () { $(this).removeClass("news_dl_hover"); })
+
+    if (SID == "0001,0019,0063") {
+        $(".news_con").find("dl").addClass("dl_2hb");
+    }
+    if (SID == "0001,0019,0064") {
+        $(".news_con").find("dl").addClass("dl_2al");
+    }
+    if (SID == "0001,0019,0065") {
+        $(".news_con").find("dl").addClass("dl_2jz");
+    }
+    if (SID == "0001,0019,0066") {
+        $(".news_con").find("dl").addClass("dl_2zz");
+    }
+    if (SID == "0001,0019,0067") {
+        $(".news_con").find("dl").addClass("dl_2xc");
+    }
+</script>

@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("global","",118,146);
+$z[0][4]['name']="cfg_soft_lang";
+$z[1]=Array("global","",170,225);
+$z[1][4]['name']="keyword";
+$z[1][4]['function']="RemoveXSS(@me)";
+$z[2]=Array("global","",232,258);
+$z[2][4]['name']="cfg_webname";
+$z[3]=Array("field","",301,330);
+$z[3][4]['name']="keywords";
+$z[4]=Array("field","",371,400);
+$z[4][4]['name']="keywords";
+$z[5]=Array("global","",489,516);
+$z[5][4]['name']="cfg_basehost";
+$z[6]=Array("global","",595,622);
+$z[6][4]['name']="cfg_basehost";
+$z[7]=Array("global","",719,746);
+$z[7][4]['name']="cfg_basehost";
+$z[8]=Array("include","",823,859);
+$z[8][4]['filename']="head2.htm";
+$z[9]=Array("global","",1273,1298);
+$z[9][4]['name']="cfg_cmsurl";
+$z[10]=Array("global","",1301,1329);
+$z[10][4]['name']="cfg_indexname";
+$z[11]=Array("global","",1351,1406);
+$z[11][4]['name']="keyword";
+$z[11][4]['function']="RemoveXSS(@me)";
+$z[12]=Array("list","				 \r\n					<div class=\"l2tit\" style=\"width: 95%;\">  \r\n						[<a title=\"[field:typename/]\" target=\"_blank\" href=\"[field:typeurl/]\">[field:typename/]</a>]\r\n                        <a title=\"[field:title/]\" href=\"[field:arcurl/]\" target=\"_blank\" class=\"f14\">[field:title/]</a>\r\n						<span class=\"f11\">[ [field:stime/] ]</span>	\r\n					</div>\r\n                    <div class=\"clear\">\r\n                    </div>\r\n					<dl class=\"sear_dl\">\r\n						<dt class=\"dt2\">\r\n							<a href=\"[field:arcurl/]\"  target=\"_blank\" title=\"[field:fulltitle/]\">\r\n								<img src=\"[field:litpic/]\" title=\"[field:fulltitle/]\" alt=\"[field:fulltitle/]\" /></a>\r\n						</dt>\r\n						<dd class=\"d2\">\r\n							[field:description/]…\r\n							<a href=\"[field:arcurl/]\" class=\"cRed\" title=\"[field:fulltitle/]\">[查看]</a>\r\n						</dd>\r\n                        <dd>\r\n							<a href=\"[field:arcurl/]\" class=\"a_d\" title=\"[field:fulltitle/]\">\r\n                             [field:global.cfg_basehost/][field:arcurl/]</a>\r\n							 <img src=\"[field:global.cfg_templets_skin/]/Images/Index/x3.gif\" alt=\"3星\" class=\"vam\" />\r\n						</dd>\r\n					</dl>\r\n					\r\n				 ",1607,2765);
+$z[12][4]['perpage']="20";
+$z[13]=Array("likewords","",3103,3128);
+$z[13][4]['num']="8";
+$z[14]=Array("pagelist","",3279,3308);
+$z[14][4]['listsize']="4";
+$z[15]=Array("likearticle","\r\n\r\n				<li>\r\n					<img src=\"[field:global.cfg_templets_skin/]/Images/Index/sico15.gif\" alt=\"[field:fulltitle/]\" title=\"[field:fulltitle/]\" /><a\r\n                                    href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\" target=\"_blank\" >\r\n                                    [field:title/]</a></li>				\r\n			            \r\n				",3736,4133);
+$z[15][4]['row']="20";
+$z[15][4]['titlelen']="44";
+$z[16]=Array("arclist","\r\n\r\n				<li>\r\n					<img src=\"[field:global.cfg_templets_skin/]/Images/Index/sico15.gif\" alt=\"[field:fulltitle/]\" title=\"[field:fulltitle/]\" /><a\r\n                                    href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\" target=\"_blank\" >\r\n                                    [field:title/]</a></li>				\r\n			            \r\n				",4145,4540);
+$z[16][4]['typeid']="69";
+$z[16][4]['titlelen']="42";
+$z[16][4]['row']="10";
+$z[17]=Array("arclist","\r\n\r\n				<li>\r\n					<img src=\"[field:global.cfg_templets_skin/]/Images/Index/sico15.gif\" alt=\"[field:fulltitle/]\" title=\"[field:fulltitle/]\" /><a\r\n                                    href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\" target=\"_blank\" >\r\n                                    [field:title/]</a></li>				\r\n			            \r\n				",4552,4939);
+$z[17][4]['row']="10";
+$z[17][4]['orderby']="click";
+$z[18]=Array("include","",5164,5201);
+$z[18][4]['filename']="footer.htm";
+
+?>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.title/}" />
+<meta name="description" content="{dede:field.title/}{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_basehost/}/assets/css/resetcommonindex.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_basehost/}/assets/css/Style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/jcia.js"></script>
+</head>
+<body>
+	{dede:include filename="head.htm"/}
+    <!--Header:End-->
+    <!--Content:Start-->
+    <div class="content">
+        <div class="topadcs">
+            <a  target=_blank href='/Service/' title='我们的服务让您生活的更美好'><img src='/uploads/allimg/150105/1-15010515135N34.png' alt='我们的服务让您生活的更美好' title='我们的服务让您生活的更美好' /></a>
+            
+        </div>
+        <div class="plc2">
+            当前位置：<a href="{dede:global.cfg_cmsurl/}/">{dede:global.cfg_indexname/}</a> > <a href='tags.php'>TAG标签</a> > {dede:field.title /}</div>
+        <div class="left2">
+            <div class="left2top">
+            </div>
+            <div class="left2_main">
+                <div class="search_con">                    
+                {dede:list orderby='sortrank' pagesize='5'}   
+                            <dl class="sear_dl" style="width: 95%;">
+                                <dt class="tit"><a title="[field:typename /]" target="_blank" href="[field:typeurl/]">
+                                    [[field:typename /]]</a><a target="_blank" href="[field:arcurl/]"
+                                        class="f14" title="[field:fulltitle/]">[field:title/]</a><span class="f11">[
+                                            [field:pubdate function="GetDateTimeMK(@me)"/]
+                                            ]</span></dt>
+                                <dd class="d1">
+                                    [field:description/]...
+								</dd>
+                                <dd>
+                                    <a href="[field:arcurl/]" target="_blank"
+                                        class="a_d" title="[field:fulltitle/]">                                       [field:global.cfg_basehost/][field:arcurl/]</a><img src="[field:global.cfg_templets_skin/]/Images/Index/x3.gif"
+                                            alt="3星" class="vam" /></dd>
+                            </dl>
+                {/dede:list} 
+                    <div class="clear">
+                    </div>
+                    <div class="rele_search">
+                        <h5>
+                            相关搜索</h5>
+                        <ul>
+                            
+                            <li id="noRelevantSearch">无相关搜索</li>
+                        </ul>
+                        <div class="clear">
+                        </div>
+                    </div>
+
+<div id="pagerMain" class="apage"> {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}</div>
+
+                </div>
+            </div>
+            <div class="left2bot">
+            </div>
+        </div>
+        <div class="right2">
+            <div class="right2top">
+            </div>
+            <div class="right2_main">
+                <h4 class="t03">
+                    <a href="/news/" title="资讯中心">资讯中心</a></h4>
+                <ul class="n_rt_ul2">
+                {dede:likearticle row='20' titlelen='44'}
+
+				<li>
+					<img src="[field:global.cfg_templets_skin/]/Images/Index/sico15.gif" alt="[field:fulltitle/]" title="[field:fulltitle/]" /><a
+                                    href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank" >
+                                    [field:title/]</a></li>				
+			            
+				{/dede:likearticle}
+				
+				{dede:arclist flag='c' titlelen=42 row=10}
+
+				<li>
+					<img src="[field:global.cfg_templets_skin/]/Images/Index/sico15.gif" alt="[field:fulltitle/]" title="[field:fulltitle/]" /><a
+                                    href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank" >
+                                    [field:title/]</a></li>				
+			            
+				{/dede:arclist}
+				
+				{dede:arclist row=10 orderby=click}
+
+				<li>
+					<img src="[field:global.cfg_templets_skin/]/Images/Index/sico15.gif" alt="[field:fulltitle/]" title="[field:fulltitle/]" /><a
+                                    href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank" >
+                                    [field:title/]</a></li>				
+			            
+				{/dede:arclist}
+                </ul>
+            </div>
+            <div class="right2bot">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <!--Content:End-->
+    <!--Footer:Start-->
+	{dede:include filename="footer.htm"/}
+    <!--Footer:End-->
+
+</body>
+</html>

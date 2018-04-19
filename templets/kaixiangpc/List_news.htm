@@ -1,0 +1,136 @@
+ 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="{dede:global.cfg_soft_lang/}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{dede:field.title function='ereg_replace(" » ","_",@me)'/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field.keywords/}" />
+    <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+    <link href="{dede:global.cfg_basehost/}/assets/css/resetcommon.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_basehost/}/assets/css/Style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{dede:global.cfg_basehost/}/assets/js/jcia.js"></script>
+	<script type="text/javascript">SKIN_PATH="/Templets/Kx1/";</script>
+</head>
+<body>
+    <!--Header:Start-->
+
+	{dede:include filename="head2.htm"/}
+    <!--content:start-->
+    <div class="content">
+        <div class="topadcs">
+            <a target="_blank" href="/Service/" title="服务让生活更美好！"><img src="/uploads/allimg/150105/1-150105103U9649.png" alt="服务让生活更美好！" title="服务让生活更美好！"></a>
+        </div>
+       
+        <div class="rightl">
+            <div class="righttop">
+            </div>
+            
+<div class="plc">
+    <span><span class="dang">当前位置：</span>{dede:field name='position'/}</span>
+	
+</div>
+            <div class="rightbot">
+            </div>
+            <div class="righttop mt10">
+            </div>
+            <div class="right_main">
+                <div class="news_con">
+                    
+                    <ul class="news_ul">
+                    {dede:list pagesize='16'}    
+                                <li><a title="[field:fulltitle/]" href="[field:typeurl/]">
+                                [[field:typename/]]</a><a href="[field:arcurl/]"
+                                    target="_blank" title="[field:fulltitle/]">[field:fulltitle/]</a><span class="last">[
+                                        [field:pubdate function="GetDateTimeMK(@me)"/]
+                                        ]</span></li>
+                            
+                    {/dede:list}            
+                            
+                    </ul>
+                    
+                    <div class="clear">
+                    </div>
+
+					<div id="pagerMain" class="apage">
+					{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+					</div>
+					
+
+                </div>
+            </div>
+            <div class="rightbot">
+            </div>
+             <div class="RandomNews" id="righttuijian">
+                <h4 class="diysr">
+                    推荐服务</h4>
+                <div class="news_random">
+                    {dede:arclist row='3' typeid='2,11,21,34,39,46,53' titlelen='24' flag='c' type='image.'}
+                            <dl class="pd_list_dl">
+                                <dt><a href="[field:arcurl /]" target="_blank"
+                                    title="[field:fulltitle/]">
+                                    <img src="[field:litpic/]" alt="[field:fulltitle/]" title="[field:fulltitle/]" /></a></dt>
+                                <dd>
+                                    <a href="[field:arcurl /]" title="[field:fulltitle/]"
+                                        target="_blank">
+                                        [field:fulltitle/]</a></dd>
+                            </dl>                        
+                            
+                    {/dede:arclist}	    
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div class="rightbot">
+            </div>
+            
+        </div>
+         
+<div class="leftr">
+    <div class="leib" id="cgal" style="display: none;">
+        <div class="tit">
+            <a href="/News/chenggonganli/" title="成功案例">成功案例</a></div>
+        
+        <div class="leftbot">
+        </div>
+    </div>
+    <div class="leib">{dede:type typeid="57"}
+        <div class="tit">
+            <a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></div>{/dede:type}
+        <div class="nr">{dede:type typeid="62"}
+			<h4  sid="0001,0010001,001[field:global name=autoindex runphp=\"yes\"]@me=@me+9;[/field:global]"><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></h4>{/dede:type}	
+			<ul>
+			{dede:channel type="son" typeid='62' noself=='yes'}
+				<li sid="0001,0019,002[field:global name=autoindex runphp=\"yes\"]@me=@me+2;[/field:global]"><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></li>
+				
+			{/dede:channel} 		
+			</ul>{dede:type typeid="69"}
+			<h4 class="news_item" sid="0001,0020"><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></h4>{/dede:type}
+		</div>
+        <div class="leftbot">
+        </div>
+    </div>
+    <div class="leib3 mt10">
+	{dede:mytag name='Contact' ismake='yes'/} 
+	</div>
+	
+	<div class="leftbot">
+    </div>
+</div>
+<script type="text/ecmascript">
+    var sid = " ";
+    if (sid.indexOf("0022") > 0) {
+        $("#cgal").show();
+    }
+</script>
+
+        <div class="clear">
+        </div>
+    </div>
+    <!--content:end-->
+    <!--Footer:Start-->
+	{dede:include filename="footer.htm"/}
+    
+</body>
+</html>
